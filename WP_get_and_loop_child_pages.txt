@@ -1,0 +1,13 @@
+<?php // get child pages 
+$pages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) ); ?>
+							<div class="module articles-list">
+<?php // loop through child pages 
+							foreach ($pages as $page) { ?>
+                                <section class="articles-list__item">
+                                	<h1 class="main-content-area__headline--sub articles__item__headline"><?php echo $page->post_title; ?></h1>
+                                    <p class="articles-list__blurb"><?php echo $page->post_excerpt; ?></p>
+                                    <a class="articles-list__link" href="<?php the_permalink(); echo $page->post_name; ?>">Read more</a>
+                                </section>
+							<?php } // end foreach ?> 
+                            </div> 
+                        <?php endwhile; ?>

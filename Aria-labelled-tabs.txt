@@ -1,0 +1,17 @@
+<div id="propertyTabs">
+						            <ul class="single_property__tabs-labels resp-tabs-list" role="tablist">
+						                <li id="tab1" class="single_property__tabs-label" aria-controls="panel1" role="tab">Information</li>
+						                <li id="tab2" class="single_property__tabs-label" aria-controls="panel2" role="tab">Room rates</li>
+						                <li id="tab3" class="single_property__tabs-label" aria-controls="panel3" role="tab">Facilities</li>
+						                <li id="tab4" class="single_property__tabs-label" aria-controls="panel4" role="tab">Tour</li>
+						                <li id="tab5" class="single_property__tabs-label" aria-controls="panel5" role="tab">FAQ</li>
+						            </ul>
+
+						            <div class="single_property__tabs-sections resp-tabs-container">
+						                <div id="panel1" class="single_property__tabs-section" aria-labeledby="tab1" role="tabpanel">Content 1</div>
+						                <div id="panel2" class="single_property__tabs-section" aria-labeledby="tab2" role="tabpanel">Content 2</div>
+						                <div id="panel3" class="single_property__tabs-section" aria-labeledby="tab3" role="tabpanel">Content 3</div>
+						                <div id="panel4" class="single_property__tabs-section" aria-labeledby="tab4" role="tabpanel">Content 4</div>
+						                <div id="panel5" class="single_property__tabs-section" aria-labeledby="tab5" role="tabpanel">Content 5</div>
+						            </div>
+						        </div>

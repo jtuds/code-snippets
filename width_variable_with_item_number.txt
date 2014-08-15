@@ -1,0 +1,19 @@
+/* one item */
+.tabs ul.controls li:first-child:nth-last-child(1) {
+	width:100%;
+}
+/* two items */
+.tabs ul.controls li:first-child:nth-last-child(2),
+.tabs ul.controls li:first-child:nth-last-child(2) ~ li {
+	width: 50%;
+}
+/* three items */
+.tabs ul.controls li:first-child:nth-last-child(3),
+.tabs ul.controls li:first-child:nth-last-child(3) ~ li {
+	width: 33.3333%;
+}
+/* four items */
+.tabs ul.controls li:first-child:nth-last-child(4),
+.tabs ul.controls li:first-child:nth-last-child(4) ~ li {
+	width: 25%;
+}

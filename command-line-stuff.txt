@@ -1,0 +1,2 @@
+"-v" : version
+"sass --compass --sourcemap --watch assets/sass:dist/sass" : SASS WATCH AND COMPILE WITH FLAGS

@@ -1,0 +1,31 @@
+<head>
+<link rel="stylesheet" href="slider.css" media="all">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="slider.js"></script>
+</head>
+
+<div class="rotator">
+    <input type="radio" name="slider" id="slide1" class="slide1" checked />
+    <input type="radio" name="slider" id="slide2" class="slide2" />
+    <input type="radio" name="slider" id="slide3" class="slide3" />
+    
+    <div class="window">
+        <ul class="slides">
+            <li class="slide1 active">
+                <img src="http://placehold.it/920x310&text=1" />
+            </li>
+            <li class="slide2">
+                <img src="http://placehold.it/920x310&text=2" />
+            </li>
+            <li class="slide3">
+                <img src="http://placehold.it/920x310&text=4" />
+            </li>
+        </ul>
+    </div>
+    
+    <ul class="controls">
+        <li><label class="control1 active" for="slide1">Slide 1</label></li>
+        <li><label class="control2" for="slide2">Slide 2</label></li>
+        <li><label class="control3" for="slide3">Slide 3</label></li>
+    </ul>
+</div>

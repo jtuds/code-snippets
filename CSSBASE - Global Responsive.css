@@ -1,0 +1,69 @@
+/*
+	Theme Name: Freedom Finance
+	URL: http://www.robotcreative.co.uk
+	Description: Global CSS - rules for all viewports
+	Author: James Tudsbury @jtuds
+	Version: 1.0
+	
+	Code based on BEM methodology - e.g.
+	.block {}
+	.block__element {}
+	.block--modifier {}
+	.block__element--modifier {}
+	N.B. Keep grid structure separated for better abstraction - e.g. .grid__item.element NOT grid__item__element
+*/
+
+/*
+-----------------------------------------------------------------------------------------
+RESET
+-----------------------------------------------------------------------------------------
+*/
+
+html, body {font-size:62.5%; height:100%;}
+html, body, form, fieldset {border:0px; margin:0px; padding:0px;}
+h1, h2, h3, h4, h5, h6, hr, pre, blockquote, address, input, label, textarea {border:0px; margin:0px; outline:none; padding:0px;}
+article, aside, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; margin:0px; padding:0px;}
+table {border-collapse:collapse; border-spacing:0px;}
+ol, ul, dl, li {list-style:none; margin:0px; padding:0px;}
+p {margin:0px;}
+img {border:none; display:block;}
+
+
+/*
+-----------------------------------------------------------------------------------------  
+GLOBAL
+-----------------------------------------------------------------------------------------
+*/
+
+* {box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;}
+main {display:block; margin:0px; padding:0px;}
+.container {width:80%; max-width:1200px; margin:0 auto;}
+.module {margin-bottom:2em;}
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.clear:before, .clear:after { content: ""; display: table; }
+.clear:after { clear: both; }
+.clear { *zoom: 1; }
+.ie6 .cf { zoom: 1 }
+img, embed, object, video { max-width: 100%; }
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video { width: 100%; }
+
+
+/*
+-----------------------------------------------------------------------------------------
+TEXT & LINKS
+-----------------------------------------------------------------------------------------
+*/
+
+body {font-family:Arial, Helvetica, sans-serif; font-size: 1em;/*1em generally = 10px*/ line-height: 1.618em; color: #333;}
+p, ul, ol, dl, blockquote {font-size: 1.4em; line-height: 1.618em;}
+ul { list-style-type: disc; margin-left: 1.618em; }
+ol { list-style-type: decimal; margin-left: 1.618em; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0;}
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+small { font-size: 80%; }
+a, a:visited { outline:none; color: #000; text-decoration:none; font-family:Arial, Helvetica, sans-serif;}  
+a:hover, a:focus { outline:none; text-decoration:none; color:#cc0000;}  
+a:active, a:focus { outline: none; }
+a.selected {color:#cc0000;}
+a:hover i, a:focus i {color:#cc0000;}

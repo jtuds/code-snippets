@@ -1,0 +1,9 @@
+function getThemePath() {
+	$url = site_url('/wp-content/themes/boilerplate');
+	echo $url;
+}
+
+function getBasePath() {
+	$url = site_url();
+	echo $url;
+}

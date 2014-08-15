@@ -1,0 +1,3 @@
+<p><?php $name= $_REQUEST['full_name']; $message= $_REQUEST['message']; $tel= $_REQUEST['tel']; $emailaddress= $_REQUEST['emailaddress']; $to = "jtuds@yahoo.co.uk"; $subject = "Contact Us"; $email = $_REQUEST['full_name'] ; $message = "Name: $name \n Message: $message \n Telephone: $tel \n Email: $emailaddress" ; $headers = "From: Contact_form"; $sent = mail($to, $subject, $message, $headers) ; if($sent) {print "Your mail was sent successfully"; } else {print "We encountered an error sending your mail"; } ?></p>
+
+<p>Click <a href="../index.html">here</a> to go back to the homepage</p>

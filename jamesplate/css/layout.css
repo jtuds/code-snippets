@@ -1,0 +1,30 @@
+/*
+	Theme Name: 
+	URL: 
+	Description: Layout CSS - media query rules
+	Author: James Tudsbury @jtuds
+	Version: 1.0
+	
+	Code based on BEM methodology - e.g.
+	.block {}
+	.block__element {}
+	.block--modifier {}
+	.block__element--modifier {}
+	N.B. Keep grid structure separated for better abstraction - e.g. .grid__item.element NOT grid__item__element
+*/
+
+/*
+-----------------------------------------------------------------------------------------
+X. MAIN ELEMENT/SECTION
+-----------------------------------------------------------------------------------------
+*/
+/*
+-------------------------------------------------------------
+- X.x SUB SECTION
+-------------------------------------------------------------
+*/
+/*
+------------------------------------
+-- X.x.x SUB SUB SECTION
+------------------------------------
+*/

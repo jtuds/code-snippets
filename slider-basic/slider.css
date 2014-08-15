@@ -1,0 +1,28 @@
+/* ROTATOR - Main styling/setup
+------------------------------------*/
+.rotator {position:relative; margin:0 auto; width:80%;}
+.rotator input {display:none;}
+.rotator .window {position:relative; overflow:hidden;}
+.rotator .window .slides {-webkit-transition:all 0.8s ease; -moz-transition:all 0.8s ease; -ms-transition:all 0.8s ease; -o-transition:all 0.8s ease; transition:all 0.8s ease; width:1000%;}
+.rotator .window .slides [class*="slide"] {float:left; width:10%;}
+.rotator .window .slides img {max-width:100%; margin:0 auto;}
+
+/* ROTATOR - Controls styling/setup
+------------------------------------*/
+.rotator ul.controls {background:#333; border-radius:22px; height:20px; left:50%; margin:-22px 0 0 -42px; padding:12px 8px; position:absolute; top:100%; width:84px; z-index:998;}
+.rotator ul.controls li [class*="control"] {background:#fff; border-radius:50%; cursor:pointer; display:block; float:left; height:20px; margin:0 4px; text-indent:-9999px; width:20px;}
+.rotator ul.controls li [class*="control"]:hover {background:#666;}
+
+/* ROTATOR - Functionality
+------------------------------------*/
+.rotator #slide1:checked ~ .window .slides {margin-left:0;} 
+.rotator #slide2:checked ~ .window .slides {margin-left:-100%;}
+.rotator #slide3:checked ~ .window .slides {margin-left:-200%;}
+.rotator #slide1:checked ~ ul.controls li .control1, 
+.rotator #slide2:checked ~ ul.controls li .control2,
+.rotator #slide3:checked ~ ul.controls li .control3 {background:#390; pointer-events:none;}
+
+/* RESET - include in reset rules
+------------------------------------*/
+ul, li {list-style:none; margin:0; padding:0;}
+img {display:block;}

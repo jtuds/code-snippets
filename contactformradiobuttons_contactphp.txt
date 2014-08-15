@@ -1,0 +1,18 @@
+ <div class="contact-form" role="form">
+      <form id="contact_form" name="contact_form" action="contact.php" method="post">
+      <p><label>Which garage would you like to contact?<br />
+      <input type="radio" name="which_garage" value="Station road" required />Station road<br />
+      <input type="radio" name="which_garage" value="Willowbrook road" required />Willowbrook road</label></p> 
+      <p><label>Name:<br />
+      <input type="text" id="full_name" name="full_name" value="" size="52" required /> </label></p>
+      <p><label>Telephone number:<br />
+      <input type="tel" id="tel" name="tel" value="" size="52" /> </label></p>
+      <p><label>Email address:<br />
+      <input type="text" id="emailaddress" name="emailaddress" value="" size="52" required /> </label></p>
+      <p><label>Your message:<br />
+      <textarea id="message" name="message" placeholder="Please enter your message here..." cols="40" rows="10" required /></textarea> </label></p>
+      <p><input type="submit" id="submit" name="submit" value="Send message" /></p>
+      </form>
+      </div>
+
+<?php $name= $_REQUEST['full_name']; $message= $_REQUEST['message']; $tel= $_REQUEST['tel']; $emailaddress= $_REQUEST['emailaddress']; $garage= $_REQUEST['which_garage']; $to = "jtuds@yahoo.co.uk"; $subject = "FAO: $garage"; $email = $_REQUEST['full_name'] ; $message = "FAO: $garage \n Name: $name \n Message: $message \n Telephone: $tel \n Email: $emailaddress" ; $headers = "From: Contact_form"; $sent = mail($to, $subject, $message, $headers) ; if($sent) {echo '<p class="greet">Thankyou!</p><p>Your message was sent successfully. We will get back to you very shortly.</p>'; } else {echo'<p class="greet">Sorry!</p><p>There was an error sending your message, please try again or email us directly at swift[at]swiftmotors.co.uk</p>'; } ?>
